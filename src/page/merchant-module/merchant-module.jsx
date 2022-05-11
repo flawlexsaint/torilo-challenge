@@ -49,10 +49,14 @@ const MerchantModule = () => {
                   </Space>
                   <div className="d-flex align-items-center mt-2 mt-md-0">
                     <button className="ms-md-4 me-2 arrow_btn">
-                      <i class="material-icons chevron_arrows">chevron_left</i>
+                      <i className="material-icons chevron_arrows">
+                        chevron_left
+                      </i>
                     </button>
                     <button className="arrow_btn">
-                      <i class="material-icons chevron_arrows">chevron_right</i>
+                      <i className="material-icons chevron_arrows">
+                        chevron_right
+                      </i>
                     </button>
                   </div>
                 </div>
@@ -145,7 +149,7 @@ const MerchantModule = () => {
           </div>
           <div className="col-12 mt-4">
             <div className="xs_scroll">
-              <table class="table table-borderless">
+              <table className="table table-borderless">
                 <thead>
                   <tr>
                     <td scope="col">Item Type</td>
@@ -205,6 +209,40 @@ const MerchantModule = () => {
                   ))}
                 </tbody>
               </table>
+            </div>
+            <div className="d-flex mt-4 align-items-center justify-content-between">
+              <p className="mb-0 xs_hide sm_hide">
+                Showing 1 to 10 of 500 entries
+              </p>
+              <nav aria-label="Page navigation example">
+                <ul className="pagination">
+                  <li className="page-item">
+                    <a className="page-link" href="#">
+                      Previous
+                    </a>
+                  </li>
+                  <li className="page-item">
+                    <a className="page-link" href="#">
+                      1
+                    </a>
+                  </li>
+                  <li className="page-item">
+                    <a className="page-link" href="#">
+                      2
+                    </a>
+                  </li>
+                  <li className="page-item">
+                    <a className="page-link" href="#">
+                      3
+                    </a>
+                  </li>
+                  <li className="page-item">
+                    <a className="page-link" href="#">
+                      Next
+                    </a>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>

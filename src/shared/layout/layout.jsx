@@ -16,7 +16,7 @@ const Layout = () => {
       <Topbar />
       <i
         onClick={toggle}
-        class="material-icons chevron_arrows drawer_icon lg_hide xl_hide"
+        className="material-icons chevron_arrows drawer_icon lg_hide xl_hide"
       >
         menu
       </i>
