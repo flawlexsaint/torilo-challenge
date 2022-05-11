@@ -1,13 +1,214 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import "primereact/resources/themes/lara-light-indigo/theme.css";
+@import "primereact/resources/primereact.min.css";
+@import "primeicons/primeicons.css";
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "antd/dist/antd.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap");
+@font-face {
+  font-family: Segoe UI Regular;
+  src: url("../src/assets/fonts/SEGOEUI.TTF");
+}
+@font-face {
+  font-family: Segoe UI Bold;
+  src: url("../src/assets/fonts/SEGOEUIB.TTF");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  font-family: Segoe UI Regular;
+}
+
+.sidebar {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: calc(100vh - 90px);
+}
+
+.sidebar_width {
+  width: 270px;
+}
+
+.brand_title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: right;
+  color: #1875f0;
+}
+
+.topbar_search {
+  font-size: 12px;
+  line-height: 16px;
+  color: #979797;
+  border: none !important;
+}
+
+.topbar_link {
+  font-family: "Segoe UI";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #647787;
+}
+
+.generate_invoice_btn {
+  height: 33px;
+  background: #27ae60;
+  border-radius: 30px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  padding: 0 1.5rem;
+}
+
+.menu_items {
+  font-size: 11px;
+  line-height: 15px;
+  color: #647787;
+}
+
+.merchant_bg {
+  background: #f7f8fa;
+  height: calc(100vh - 90px);
+  padding: 1.5rem 2rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.chart_date_title {
+  font-family: "Segoe UI Bold";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: flex-end;
+  color: #4f4f4f;
+}
+
+.range_picker {
+  height: 31px;
+  width: 200px;
+  border: 1px solid #dde0e3;
+  border-radius: 4.25px;
+}
+
+.arrow_btn {
+  height: 22px;
+  background: linear-gradient(0deg, #f2f4f7 0%, #ffffff 100%);
+  border: 1px solid #ced0da;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chevron_arrows {
+  color: #ced0da;
+  font-size: 16px;
+}
+
+.order_header {
+  font-family: "Segoe UI Bold";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #262626;
+  padding-bottom: 0.7rem;
+  border-bottom: 3px solid #27ae60;
+}
+
+.order_body {
+  font-family: "Segoe UI";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #262626;
+}
+
+.transaction_header {
+  font-size: 12px;
+  line-height: 16px;
+  color: #787c90;
+}
+
+.transaction_body {
+  font-size: 18px;
+  line-height: 24px;
+  color: #262626;
+}
+
+.payment_title {
+  font-size: 36px;
+  line-height: 48px;
+  color: #262626;
+}
+
+.table_text {
+  font-size: 14px;
+  line-height: 19px;
+  color: #414042;
+}
+
+.initial_bg {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #7f8fa4;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+.f-12 {
+  font-size: 12px;
+}
+
+.f-14 {
+  font-size: 14px;
+}
+
+.status {
+  height: 33px;
+  border: 1px solid #cccfd4;
+  border-radius: 30px;
+  background: transparent;
+  padding: 0 1rem;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+thead tr {
+  height: 42px;
+  background: #eaeef0;
+}
+
+thead tr td {
+  font-size: 14px;
+  line-height: 19px;
+  color: #7f8fa4;
+}
+
+td {
+  vertical-align: middle;
+}
+
+tbody tr td {
+  height: 76px;
+}
+
+.drawer_icon{
+  font-size: 30px;
+  position: absolute;
+  background: #000;
 }
